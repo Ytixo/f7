@@ -9,21 +9,10 @@ group = "iut.info1"
 version = "1.0"
 
 repositories {
-    // 1. Dépôt public officiel sur internet (indispensable depuis chez toi)
     mavenCentral()
-
-    // 2. Dépôt de l'IUT (sera ignoré chez toi mais fonctionnera à l'IUT)
-
-    maven {
-        url = uri("http://nexus.dep-info.iut-nantes.univ-nantes.prive/repository/public/")
-        isAllowInsecureProtocol = true
-    }
-
-
 }
 
 dependencies {
-    // Bibliothèque Flip7 fournie sous forme de .jar (cf. libs/iut.info1.flip7-<version>.jar).
     implementation(fileTree("libs") { include("iut.info1.flip7-*.jar") })
     testImplementation("org.junit.jupiter:junit-jupiter:5.11.4")
     testImplementation("org.junit.jupiter:junit-jupiter-params:5.11.4")

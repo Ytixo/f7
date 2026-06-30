@@ -1,0 +1,150 @@
+
+
+
+
+
+
+/* =======================================================
+   PALETTE DE COULEURS GLOBALE
+   ======================================================= */
+
+
+.root {
+    -fx-bg-color: #12121A;
+    -fx-primary-color: #00E5FF;
+    -fx-accent-color: #FF0055;
+    -fx-text-light: #FFFFFF;
+
+    -fx-j1-color: #E63946;
+    -fx-j2-color: #457B9D;
+    -fx-j3-color: #9D4EDD;
+    -fx-j4-color: #F4A261;
+
+    -fx-background-color: -fx-bg-color;
+}
+
+
+
+
+
+.button-custom {
+    -fx-background-color: transparent;
+    -fx-text-fill: -fx-primary-color;
+    -fx-border-color: -fx-primary-color;
+
+    -fx-font-size: 30px;
+    -fx-padding: 15px;
+    -fx-font-weight: bold;
+    -fx-border-width: 4px;
+
+    -fx-border-radius: 45px;
+    -fx-background-radius: 45px;
+
+    -fx-cursor: hand;
+}
+
+.button-custom:hover {
+    -fx-background-color: -fx-accent-color;
+    -fx-border-color: -fx-accent-color;
+    -fx-text-fill: -fx-text-light;
+    -fx-effect: dropshadow(three-pass-box, -fx-accent-color, 20, 0.8, 0, 0);
+}
+
+.label-texte {
+    -fx-text-fill: -fx-text-light;
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+}
+
+.scorePseudo {
+    -fx-text-fill: -fx-text-light;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+.titre-neon {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 50px;
+    -fx-font-weight: bold;
+    -fx-font-family:"Bungee Inline";
+
+
+    /*gémini*/
+    /* C'est ça qui crée l'effet lumineux (Glow) */
+    /* dropshadow(type, couleur, rayon du flou, intensité, décalageX, décalageY) */
+    -fx-effect: dropshadow(three-pass-box, -fx-primary-color, 20, 0.2, 0, 0);
+}
+
+.titre-neon-F7 {
+    -fx-font-size: 200px;
+    -fx-font-weight: bold;
+    -fx-font-family:"Monoton";
+
+
+
+}
+
+.couleur-centre {
+    /*ia pour les degrader*/
+    -fx-background-color: radial-gradient(center 50% 50%, radius 70%, #1A2238, #0B0C10);
+    -fx-border-color: rgba(255, 234, 0, 0.3); /* Bordure dorée subtile rappelant la carte */
+    -fx-border-width: 4px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-effect: innershadow(three-pass-box, #000000, 30, 0.5, 0, 0);
+}
+
+.bandeau-joueur {
+    -fx-background-color: rgba(11, 12, 16, 0.85);
+    -fx-border-color: -fx-primary-color;
+    -fx-border-width: 2px 0 2px 0;
+    -fx-text-fill: -fx-primary-color;
+    -fx-font-size: 35px;
+    -fx-font-weight: bold;
+    -fx-padding: 18 0 18 0;
+    -fx-effect: dropshadow(three-pass-box, -fx-primary-color, 20, 0.4, 0, 0);
+}
+
+
+.couleur-joueur1 {
+    -fx-background-color: rgba(255, 0, 85, 0.1);
+    -fx-border-color: -fx-j1-color;
+    -fx-border-width: 3px;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+
+    -fx-effect: dropshadow(three-pass-box, -fx-j1-color, 30, 0.4, 0, 0);
+}
+
+.couleur-joueur2 {
+    -fx-background-color: rgba(0, 229, 255, 0.1);
+    -fx-border-color: -fx-j2-color;
+    -fx-border-width: 3px;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow(three-pass-box, -fx-j2-color, 30, 0.4, 0, 0);
+}
+
+.couleur-joueur3 {
+    -fx-background-color: rgba(176, 38, 255, 0.1);
+    -fx-border-color: -fx-j3-color;
+    -fx-border-width: 3px;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow(three-pass-box, -fx-j3-color, 30, 0.4, 0, 0);
+}
+
+.couleur-joueur4 {
+    -fx-background-color: rgba(255, 234, 0, 0.1);
+    -fx-border-color: -fx-j4-color;
+    -fx-border-width: 3px;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow(three-pass-box, -fx-j4-color, 30, 0.4, 0, 0);
+}
+
+
+
+
+
+
